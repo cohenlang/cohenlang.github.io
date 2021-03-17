@@ -3,8 +3,6 @@ title: Introducción a Cohen
 permalink: /es/introduccion
 ---
 
-## Introducción
-
 **Cohen** es un lenguaje de programación para el desarrollo de *smart contracts* o *DApps* para [**Algorand**](https://algorand.foundation).
 Sus principales objetivos son:
 
