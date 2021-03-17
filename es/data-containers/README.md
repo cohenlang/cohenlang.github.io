@@ -3,6 +3,8 @@ title: Contenedores de datos
 permalink: /es/contenedores-de-datos
 ---
 
+# Contenedores de datos
+
 Un **contenedor de datos** (*data container*) es un recipiente para almacenar algo.
 Se distingue entre variables y constantes.
 

@@ -3,6 +3,8 @@ title: Rutinas
 permalink: /es/rutinas
 ---
 
+# Rutinas
+
 Una **rutina** (*routine*) representa una secuencia de operaciones que puede invocarse en cualquier momento a través de un nombre y una lista de cero o más argumentos.
 Se distingue entre funciones, aquéllas que devuelven un valor;
 y procedimientos, aquéllos que no devuelven nada.

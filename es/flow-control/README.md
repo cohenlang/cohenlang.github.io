@@ -3,6 +3,8 @@ title: Control de flujo
 permalink: /es/control-de-flujo
 ---
 
+# Control de flujo
+
 El **control de flujo** (*flow control*) consiste en las sentencias con las que regular el flujo de ejecución de un bloque de proposiciones.
 
 ## Sentencia if

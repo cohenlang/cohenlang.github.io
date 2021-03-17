@@ -3,6 +3,8 @@ title: Interfaces
 permalink: /es/interfaces
 ---
 
+# Interfaces
+
 Una **interfaz** (*interface*) declara la estructura de datos de un objeto.
 Es similar a las interfaces de otros lenguajes, pero en **Cohen** sólo indica los campos que un objeto puede tener.
 Básicamente, se utilizan para declarar los campos que necesitamos tenga un determinado objeto para poder operar con él.

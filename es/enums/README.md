@@ -3,6 +3,8 @@ title: Enumeraciones
 permalink: /es/enumeraciones
 ---
 
+# Enumeraciones
+
 Una **enumeración** (*enumeration*) es un tipo que lista un posible conjunto explícito de valores.
 Se definen mediante la sentencia **enum**:
 

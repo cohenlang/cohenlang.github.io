@@ -3,6 +3,8 @@ title: Errores
 permalink: /es/errores
 ---
 
+# Errores
+
 **Cohen** proporciona soporte para errores, donde un **error** representa un evento anómalo que finaliza la ejecución del programa.
 Para ello, proporciona la función reservada **throw()**.
 

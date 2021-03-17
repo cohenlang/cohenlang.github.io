@@ -3,6 +3,8 @@ title: Desempaquetado
 permalink: /es/desempaquetado
 ---
 
+# Desempaquetado
+
 El **desempaquetado** (*unpacking*) es una operación que permite extraer fácilmente objetos de listas, mapas o estructuras.
 
 ## Expresiones de desempaquetado

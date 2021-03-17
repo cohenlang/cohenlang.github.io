@@ -3,6 +3,8 @@ title: Estructuras
 permalink: /es/estructuras
 ---
 
+# Estructuras
+
 Una **estructura** (*struct*) es un tipo de datos especial, con las siguientes características:
 
 - No puede definir un constructor explícitamente, pues lo hará el compilador implícitamente.

@@ -3,6 +3,8 @@ title: Contratos inteligentes
 permalink: /es/contratos-inteligentes
 ---
 
+# Contratos inteligentes
+
 Un **contrato inteligente** (*smart contract*) no es más que un tipo de aplicación para *blockchain*.
 Representa una aplicación que puede desplegarse en la cadena de bloques tantas veces como sea necesario.
 

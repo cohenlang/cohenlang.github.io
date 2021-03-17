@@ -3,6 +3,8 @@ title: Módulos
 permalink: /es/modulos
 ---
 
+# Módulos
+
 Un **módulo** (*module*) es un archivo de código, con extensión **.chn**, que contiene objetos reutilizables como, por ejemplo, funciones, estructuras, enumeraciones, interfaces o contratos.
 
 Los módulos tienen miembros.
