@@ -22,15 +22,23 @@ Y proporciona las siguientes herramientas:
 
 *Roadmap*:
 
+- Generación de **Markdown** a partir de los comentarios de documentación.
+
 - Soporte de herencia de simple.
+
+- Soporte de activos (*assets*).
+
+- Soporte de contratos inteligentes sin estado.
 
 - Soporte para **TypeScript**, **Dart**, **Python** y **Go**.
 
-- Generación de **Markdown** a partir de los comentarios de documentación.
+- Añadidura de depurador a la extensión de **Visual Studio Code**.
 
 ## Instalación
 
 **Cohen** se ha desarrollado para la plataforma [**Node.js**](https://nodejs.org) con [**Dogma**](https://dogmalang.com).
+Dispone de 100% de cobertura de código.
+
 Las herramientas de **Cohen** se pueden instalar como sigue:
 
 ```shell
