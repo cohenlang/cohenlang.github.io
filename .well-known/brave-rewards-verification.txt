@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: cohenlang.github.io
+Token: 26a30000431c08e0d437b994dc9cd48c3d93e660c9b66c4fa5d0f85bae0df546
