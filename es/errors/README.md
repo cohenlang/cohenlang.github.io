@@ -13,13 +13,13 @@ Para ello, proporciona la función reservada **throw()**.
 Mediante la **propagación de error** (*error throwing* o *error raising*) se genera un error que finaliza el programa.
 Se debe utilizar la función reservada **throw()**:
 
-```
+```cohen
 fn throw(error: text)
 ```
 
 Ejemplos:
 
-```
+```cohen
 throw("Esto es el mensaje de error.")
 ```
 

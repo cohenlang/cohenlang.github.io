@@ -13,7 +13,7 @@ Una **estructura** (*struct*) es un tipo de datos especial, con las siguientes c
 
 Vamos a ver un ejemplo ilustrativo para ir abriendo boca:
 
-```
+```cohen
 struct Interval
   const begin: ts
   const end: ts
@@ -22,7 +22,7 @@ struct Interval
 
 Las estructuras definen un constructor implícito que obliga a tener que crear sus instancias a partir de un mapa u otro objeto con esos mismos campos:
 
-```
+```cohen
 Interval({begin = valor, end = valor})
 Interval(begin = valor, end = valor)    #como siempre son mapas, se puede omitir {}
 Interval(begin, end)                    #similar a: begin = begin, end = end
@@ -32,7 +32,7 @@ Interval(begin, end)                    #similar a: begin = begin, end = end
 
 La sintaxis de la sentencia **struct** es como sigue:
 
-```
+```cohen
 struct Nombre
   miembro
   miembro
@@ -45,7 +45,7 @@ struct Nombre
 Se puede definir una **propiedad** (*property*), esto es, un campo cuyo valor se calcula a partir de una expresión.
 Para ello, tenemos dos sintaxis:
 
-```
+```cohen
 #Cuando la propiedad tiene varias proposiciones.
 #Se indica el valor a devolver mediante un return.
 @prop
@@ -62,7 +62,7 @@ fn nombre = valor
 En caso de conflictos de nombre, puede utilizar el objeto **self** para indicar la instancia actual.
 Ejemplo:
 
-```
+```cohen
 struct Interval
   const begin: ts
   const end: ts

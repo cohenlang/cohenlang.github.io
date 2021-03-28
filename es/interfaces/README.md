@@ -13,7 +13,7 @@ Básicamente, se utilizan para declarar los campos que necesitamos tenga un dete
 
 Para definir una interfaz, hay que utilizar la sentencia **intf**:
 
-```
+```cohen
 #sin interfaz madre
 intf Nombre
   Campos
@@ -25,13 +25,13 @@ intf Nombre: Nombre
 
 Los campos se definen como sigue:
 
-```
+```cohen
 nombre: tipo
 ```
 
 Ejemplo:
 
-```
+```cohen
 intf Interval
   begin: ts
   end: ts

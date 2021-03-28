@@ -25,12 +25,14 @@ Básicamente contiene:
 
 En **Cohen**, un contrato con estado se implementa mediante la sentencia ***contract***:
 
-```
+```cohen
 @stateful
 export contract NombreContrato
   #campos del estado global
   #y métodos
 ```
+
+La extensión de **Visual Studio Code** dispone del *snippet* **@stateful** para añadir una plantilla de contrato.
 
 ### Estado de un contrato
 
@@ -50,7 +52,7 @@ Observe que el estado global es ajeno a los suscriptores, mientras que el local 
 El estado global se almacena mediante campos definidos en el contrato.
 Cuya sintaxis es como sigue:
 
-```
+```cohen
 var|const nombre: tipo
 ```
 
@@ -77,7 +79,7 @@ Como el estado local se almacena en los registros de los suscriptores, es necesa
 El estado local de una cuenta se encuentra en su campo ***localState***.
 He aquí un ejemplo ilustrativo:
 
-```
+```cohen
 @optedIn
 entry proc vote(t: txn, vote: uint)
   #(1) pre
@@ -105,7 +107,7 @@ Estas cuatro cuentas se conocen formalmente como **cuentas de aplicación** (*ap
 Si aparecen más de cuatro definiciones de este tipo, se propagará un error en tiempo de compilación.
 Sintaxis:
 
-```
+```cohen
 @app
 const nombre: acct<localState: Tipo>
 
@@ -119,11 +121,13 @@ Esto se indica mediante un sintaxis parecía a las plantillas o genéricos de ot
 Su inicialización corre a cargo del comando `goal app`.
 No se permitirá su escritura en el método constructor.
 
+La extensión de **Visual Studio Code** dispone del *snippet* **@app** para añadir una plantilla de cuenta de aplicación.
+
 Si se desea, de las cuentas suscritas al contrato y no marcadas como de aplicación, se puede leer su estado local.
 No se puede escribir en él, pero sí leerlo.
 En estos casos, puede definirlas como variables o constantes, claro está, sin la anotación **@app**:
 
-```
+```cohen
 var|const nombre: acct<localState: Tipo>
 ```
 
@@ -132,7 +136,7 @@ var|const nombre: acct<localState: Tipo>
 El **comportamiento** (*behaviour*) consiste en las funciones o métodos del contrato que proporcionan su lógica.
 Un contrato puede tener tantos métodos como sea necesario y se definen mediante sentencias **fn** o **proc** cuyas sintaxis son como sigue:
 
-```
+```cohen
 #función: debe devolver un valor
 fn nombre(parámetros): Tipo
 
@@ -157,7 +161,7 @@ En **Cohen**, *no* se puede sobrecargar las funciones.
 Un **parámetro** (*parameter*) es una variable o constante cuyo dato se recibe de quien invoca la función.
 He aquí su sintaxis:
 
-```
+```cohen
 #parámetros variables
 nombre: tipo
 
@@ -179,7 +183,7 @@ Es importante tener clara una cosa:
 cuando se invoque un método de entrada, sus parámetros deben ser siempre de tipo básico, no es posible pasar una estructura como sí es posible en aquéllos que no son de entrada.
 Pero como es posible que una secuencia de parámetros pueda asociarse a una interfaz o estructura, es posible definir parámetros como el siguiente:
 
-```
+```cohen
 #el uso de const está permitido
 nombre: Tipo(nombre, nombre, nombre...)
 ```
@@ -187,7 +191,7 @@ nombre: Tipo(nombre, nombre, nombre...)
 En estos casos, cuando se indica un parámetro de este tipo, lo que se está indicando es un parámetro derivado cuyo valor procede de los indicados como tipo.
 Por ejemplo, y sin entrar en programación específica de *blockchain*, supongamos la siguiente estructura de datos:
 
-```
+```cohen
 struct Interval
   begin: ts
   end: ts
@@ -197,7 +201,7 @@ La estructura se define como dos campos.
 Pero en las funciones de entrada no se puede pasar datos complejos, sólo básicos.
 Si lo deseamos, podríamos hacer lo siguiente:
 
-```
+```cohen
 entry proc __init__(t: txn, regInterval: Interval(start, end), voteInterval: Interval(start, end))
 ```
 
@@ -236,10 +240,12 @@ Cualquier otra función puede recibir el objeto transacción con cualquier nombr
 
 Recordemos:
 
-```
+```cohen
 entry proc __init__(t: txn, ...)
   #...
 ```
+
+La extensión de **Visual Studio Code** dispone del *snippet* **t** para añadir el objeto transacción.
 
 #### Anotaciones
 
@@ -253,6 +259,8 @@ A diferencia de otros lenguajes, *no* existe anotaciones para:
 
 - Definir métodos puros.
   Cualquier función que no necesite acceder al estado, por buenas prácticas, se debe definir fuera del contrato, ya sea en el propio módulo del contrato u otro distinto.
+
+Mediante el *snippet* **@view** de **Visual Studio Code** puede añadir una función de entrada de tipo **@view**.
 
 ## Ejemplos
 
@@ -268,7 +276,7 @@ Para ello:
 
 - Los votantes sólo podrán votar una vez y no podrán cambiar su voto.
 
-```
+```cohen
 /**
  * Un intervalo de tiempo.
  */

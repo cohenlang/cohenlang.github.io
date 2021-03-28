@@ -11,7 +11,7 @@ El **control de flujo** (*flow control*) consiste en las sentencias con las que 
 
 Mediante la **sentencia if** (*if statement*), se elige una de varias opciones de flujo atendiendo a unas expresiones de comparación:
 
-```
+```cohen
 if condición then
   #código
 else if condición then
@@ -25,7 +25,7 @@ else
 Se puede definir un dato en la cláusula **if** que puede utilizarse dentro de toda la sentencia, tanto en las condiciones como en los cuerpos de las demás cláusulas.
 Para ello, se puede usar la siguiente sintaxis:
 
-```
+```cohen
 #definición de variable en línea con tipo inferido
 if nombreVariable := expresión; condición then
   #...
@@ -37,7 +37,7 @@ if nombreVariable ::= expresión; condición then
 
 He aquí un ejemplo ilustrativo:
 
-```
+```cohen
 if x ::= valor; x == 0 then
   #...
 else if x == 1 then
@@ -60,7 +60,7 @@ else
 
 La **sentencia with..do** (*with..do statement*) se puede usar para seleccionar entre varias opciones:
 
-```
+```cohen
 with valor do
   if comparación1 then
     #código
@@ -73,7 +73,7 @@ with valor do
 Las cláusulas **if**s pueden indicar varias opciones separándolas por comas.
 He aquí un ejemplo:
 
-```
+```cohen
 with x do
   if 0 then #...
   if 1, 2 then #...
@@ -84,7 +84,7 @@ Al igual que en la sentencia **if**, se puede definir una variable (`:=`) o cons
 el cual se puede usar en los cuerpos de las cláusulas **if**.
 Ejemplo:
 
-```
+```cohen
 with nombre ::= expresión do
   #...
 ```
@@ -93,7 +93,7 @@ with nombre ::= expresión do
 
 La **sentencia for each** (*for each statement*) se puede utilizar para iterar por una lista con un tamaño fijo de elementos:
 
-```
+```cohen
 #definición de bucle con variable de iteración
 for each nombre in lista do
   #...
@@ -105,7 +105,7 @@ for each const nombre in lista do
 
 Ejemplo:
 
-```
+```cohen
 for each const i in [1, 2, 3] do
   #...
 ```
@@ -114,7 +114,7 @@ for each const i in [1, 2, 3] do
 
 Mediante la **sentencia break** (*break statement*), se puede finalizar un bucle:
 
-```
+```cohen
 break
 ```
 
@@ -122,6 +122,6 @@ break
 
 Mediante la **sentencia next** (*next statement*), se puede saltar a la siguiente iteración del bucle:
 
-```
+```cohen
 next
 ```

@@ -5,7 +5,9 @@ permalink: /es/introduccion
 
 # Introducción
 
-**Cohen** es un lenguaje de programación para el desarrollo de *smart contracts* o *DApps* para [**Algorand**](https://algorand.foundation).
+**Cohen** es un lenguaje de programación para el desarrollo de *smart contracts* en [**Algorand**](https://algorand.foundation).
+Debe su nombre y está dedicado a [**Leonard Cohen**](https://wikipedia.org/wiki/Leonard_Cohen).
+
 Sus principales objetivos son:
 
 - Desarrollo de DApps seguras.
@@ -60,7 +62,7 @@ Se encuentra disponible la extensión **Cohenlang** para **VS Code**.
 Un **comentario** (*comment*) es un texto usado principalmente para explicar algo.
 En **Cohen**, los comentarios comienzan por una almohadilla `(#`):
 
-```
+```cohen
 #esto es un comentario hasta fin de línea
 
 #[esto es un comentario delimitado por corchetes
@@ -76,7 +78,7 @@ Así se permite los comentarios multilínea en línea.
 Un **comentario de documentación** (*doc comment*) se utiliza para describir detalladamente un objeto como, p.ej., un tipo o una función.
 Se delimitan como sigue:
 
-```
+```cohen
 /**
  * comentario
  */
@@ -98,7 +100,7 @@ Las directivas se referencian mediante `#!`.
 Mediante la directiva **#!if** se puede compilar determinados fragmentos de código.
 Su sintaxis es como sigue:
 
-```
+```cohen
 #!if [not] Nombre then
 código
 #!else if Nombre then
@@ -116,7 +118,7 @@ Como nombre hay que indicar una variable directiva de compilación que son siemp
 Para compilar de **Cohen** a **TEAL**, hay que usar el comando **cohen teal**.
 He aquí un ejemplo ilustrativo mediante el cual se indica que compile el código, dejando los archivos generados en build, definiendo la variable directiva *xyz*:
 
-```
+```shell
 cohen teal -d=xyz -o=build src
 ```
 
@@ -125,6 +127,6 @@ cohen teal -d=xyz -o=build src
 Mediante **cohen check** se comprueba si el contenido de uno o más archivos son correctos.
 El siguiente ejemplo muestra cómo comprobar la sintaxis de los archivos ubicados en la carpeta **src**:
 
-```
+```shell
 cohen check src
 ```

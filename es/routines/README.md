@@ -14,7 +14,7 @@ y procedimientos, aquéllos que no devuelven nada.
 Una **función** (*function*) es una rutina que debe devolver un valor de un determinado tipo de dato.
 Se definen mediante la sentencia **fn**:
 
-```
+```cohen
 #Función que indica el tipo del dato a devolver
 fn nombre(parámetros): Tipo
   #cuerpo de la función
@@ -42,7 +42,7 @@ fn nombre(parámetros) = valor
 
 Para indicar que finalice la invocación y se devuelva el valor, se usa la sentencia **return**:
 
-```
+```cohen
 #devuelve el valor indicado en la definición de la función
 return
 
@@ -60,7 +60,7 @@ Cuando una función se define con `->`, tenemos que tener en cuenta lo siguiente
 
 He aquí unos ejemplos ilustrativos:
 
-```
+```cohen
 fn suma(x: uint, y: uint, z: uint) -> resultado: uint
   resultado = x + y + z
 
@@ -77,7 +77,7 @@ fn suma(x: uint, y: uint, z: uint) = x + y + z
 Un **parámetro** (*parameter*) es una variable o constante cuyo dato se recibe de quien invoca la rutina.
 He aquí su sintaxis:
 
-```
+```cohen
 #parámetros variables
 nombre: tipo
 
@@ -93,7 +93,7 @@ Actualmente, no es posible indicar valores predeterminados para los parámetros.
 Un **procedimiento** (*procedure*) es una rutina que no devuelve nada.
 Se definen mediante la sentencia **proc**:
 
-```
+```cohen
 proc nombre(parámetros)
   #cuerpo del procedimiento
 ```
@@ -112,6 +112,6 @@ No se usa el punto y coma (`;`) como en otros lenguajes.
 
 Para invocar una rutina, usar el operador de llamada de manera similar a otros lenguajes:
 
-```
+```cohen
 var resultado = suma(1, 2, 3)
 ```

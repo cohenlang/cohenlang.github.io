@@ -25,13 +25,13 @@ Un módulo puede exportar los siguientes objetos:
 La **sentencia export** (*export statement*) puede exportar un objeto.
 Su sintaxis es la siguiente:
 
-```
+```cohen
 export objeto
 ```
 
 He aquí unos ejemplos:
 
-```
+```cohen
 export fn suma(x: uint, y: uint) = x + y
 ```
 
@@ -41,13 +41,13 @@ No hay que olvidar que un módulo sólo puede tener un único **export** y, en c
 
 Cuando se desea que el módulo exporte varios objetos, debemos usar **pub**.
 
-```
+```cohen
 pub objeto
 ```
 
 Veamos un ejemplo ilustrativo:
 
-```
+```cohen
 pub fn suma(x: uint, y: uint) = x + y
 pub fn resta(x: uint, y: uint) = x - y
 ```
@@ -57,7 +57,7 @@ pub fn resta(x: uint, y: uint) = x - y
 La **importación** (*import*) es la operación mediante la cual usamos uno o más objetos de un determinado módulo.
 Deben aparecer al comienzo de un módulo y se realizan mediante una sentencia **use**:
 
-```
+```cohen
 use (
   ítem
   ítem
@@ -81,7 +81,7 @@ Se usa la barra invertida (`/`) para navegar dentro de los directorios o paquete
 
 He aquí unos ejemplos:
 
-```
+```cohen
 use (
   cohen:txn/TxnType #importa la enumeración TxnType del SDK de Cohen
   pkg:math          #importa el paquete math
@@ -92,19 +92,19 @@ use (
 
 Si se importa un módulo que publica varios objetos, se accederán por el operador punto (`.`):
 
-```
+```cohen
 math.sum(12, 34)
 ```
 
 Si se importa un módulo pero sólo se quiere hacer uso de uno o más objetos, usar la siguiente sintaxis:
 
-```
+```cohen
 {objeto, objeto...} = ítem
 ```
 
 Ejemplo:
 
-```
+```cohen
 use (
   {suma, resta} = math
 )
@@ -112,7 +112,7 @@ use (
 
 Si se desea renombrar un objeto, por ejemplo, para evitar conflictos de nombres, usar el operador **as**:
 
-```
+```cohen
 use (
   {sum as suma, sub as resta} = math
 )
@@ -120,7 +120,7 @@ use (
 
 Para importar un módulo con otro nombre, usar el operador **=**:
 
-```
+```cohen
 use (
   m = math
 )
@@ -132,7 +132,7 @@ Cuando se importa un módulo que exporta un único objeto, el propio objeto es l
 
 Todo módulo debe llevar la extensión **.chn** y tener la siguiente sintaxis:
 
-```
+```cohen
 #opcional
 use (
   importaciones
@@ -151,6 +151,6 @@ Lo harán cuando se usen en los contratos y sólo de aquellos objetos que se use
 Pero si se desea comprobar que la sintaxis de un módulo es correcta, se puede usar el comando **cohen check**.
 Ejemplo:
 
-```
+```shell
 cohen check módulo.chn
 ```

@@ -8,7 +8,7 @@ permalink: /es/enumeraciones
 Una **enumeración** (*enumeration*) es un tipo que lista un posible conjunto explícito de valores.
 Se definen mediante la sentencia **enum**:
 
-```
+```cohen
 enum Nombre
   Elemento
   Elemento
@@ -18,7 +18,7 @@ enum Nombre
 
 Cada elemento está formado por dos componentes, el nombre y su valor:
 
-```
+```cohen
 Nombre = Valor
 ```
 
@@ -26,7 +26,7 @@ El valor debe ser un literal numérico
 
 He aquí un ejemplo de una enumeración predefinida de **Cohen**:
 
-```
+```cohen
 /**
  * Los posibles tipos de transacción que pueden emitirse.
  */
@@ -44,7 +44,7 @@ enum TxnType
 
 Para comparar el valor de una variable o constante con un elemento de la enumeración, se puede usar los operadores `==`, `!=`, `==~` y `!=~`:
 
-```
+```cohen
 t.type == TxnType.AppCall
 t.type != TxnType.AppCall
 
@@ -56,7 +56,7 @@ t.type !=~ AppCall
 
 Para cambiar el valor de una variable de tipo enumeración, se puede usar los operadores `=` y `=~`:
 
-```
+```cohen
 var txnType: TxnType
 
 txnType = TxtType.Payment
@@ -67,7 +67,7 @@ txnType =~ Payment
 
 En una sentencia `with..do` podemos indicar tanto el tipo y el elemento como sólo el elemento:
 
-```
+```cohen
 with t.type do
   if TxnType.Unknown then
     #...

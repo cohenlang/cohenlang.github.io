@@ -13,7 +13,7 @@ Se distingue entre variables y constantes.
 Una **variable** es un contenedor de datos que puede cambiar su valor almacenado en cualquier momento.
 Para definir variables, se usa la sentencia **var**:
 
-```
+```cohen
 #una variable por sentencia
 var nombre: Tipo
 var nombre: Tipo = valor
@@ -30,7 +30,7 @@ var (
 
 Ejemplos:
 
-```
+```cohen
 var x = 123
 var y: text = "ciao mondo!"
 
@@ -46,7 +46,7 @@ Una **constante** (*constant*) es un contenedor que no permite modificar su valo
 Por esta razón, deben inicializarse siempre.
 Se definen mediante la sentencia **const**:
 
-```
+```cohen
 #una única constante
 const nombre: Tipo = valor
 const nombre = valor        #tipo inferido del valor
@@ -61,7 +61,7 @@ const (
 
 Veamos un ejemplos:
 
-```
+```cohen
 const x = 123
 const y: text = "ciao mondo!"
 
@@ -81,7 +81,7 @@ Mientras que una **palabra clave** (*keyword*), aquél reservado por el lenguaje
 Los identificadores deben comenzar por un subrayado o una letra, seguido de cero, uno o más caracteres (letras, dígitos o subrayados).
 He aquí unos ejemplos ilustrativos:
 
-```
+```cohen
 x
 _x
 x123

@@ -19,13 +19,13 @@ Cada variable recibe el elemento de la lista que le corresponda por su posición
 Así pues, la primera variable recibirá el elemento 0; la segunda, el 1; y así sucesivamente.
 Su sintaxis es como sigue:
 
-```
+```cohen
 [variable, variable, variable...] = Exp
 ```
 
 También se puede definir contenedores de datos a partir de listas:
 
-```
+```cohen
 var [variable, variable, variable...] = Exp
 const [variable, variable, variable...] = Exp
 ```
@@ -37,12 +37,12 @@ No hace falta indicar los tipos, porque se inferirán del tipo de la lista.
 También es posible desempaquetar campos de un mapa u objeto.
 En este caso, se usa las llaves (`{}`):
 
-```
+```cohen
 {variable, variable, variable...} = Exp
 ```
 
 Ejemplo:
 
-```
+```cohen
 const {begin, end} = voteRound
 ```
